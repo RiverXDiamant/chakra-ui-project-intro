@@ -16,8 +16,8 @@ interface FeatureProps extends StackProps {
 function Feature(props: FeatureProps) {
   const { icon, children, ...rest } = props;
   return (
-    <HStack {...rest} spacing="6">
-      <Icon as={icon} boxSize="12" />
+    <HStack {...rest} spacing="6" align="start">
+      <Icon as={icon} boxSize={["8", "8", "12"]} />
       <Text textAlign="left" fontSize="lg" fontWeight="bold">
         {children}
       </Text>
@@ -28,7 +28,11 @@ function Feature(props: FeatureProps) {
 export default function Features() {
   return (
     <Box maxW="1024px" m="auto" pt="60px" pb="8">
-      <HStack px="12" spacing="5">
+      <HStack
+        px="12"
+        direction={["column", "column", "row"]}
+        spacing={["6", "6", "5"]}
+      >
         <Feature icon={MoneyBackGuaranteeIcon}>
           30 Days money back Guarantee
         </Feature>
