@@ -44,13 +44,13 @@ export default function Pricing() {
       <Flex>
         {/*Left Section */}
         <Box bg="#F0EAFB" p="60px">
-          <Text fontSize="24px" fontWeight="800">
+          <Text fontSize="2xl" fontWeight="800">
             Premium PRO
           </Text>
           <Heading as="h3" fontSize="60px" mt="4">
             $329
           </Heading>
-          <Text color="121923" fontSize="18px" fontWeight="500" mt="2">
+          <Text color="121923" fontSize="lg" fontWeight="500" mt="2">
             billed just once
           </Text>
           <Button colorScheme="purple" size="lg" w="282px" mt="6">
@@ -58,7 +58,7 @@ export default function Pricing() {
           </Button>
         </Box>
         {/*Right Section */}
-        <Box p="60px" fontSize="18px" bg="white">
+        <Box p="60px" fontSize="lg" bg="white">
           <Text textAlign="left">
             Access these features when you get this pricing package for your
             business
