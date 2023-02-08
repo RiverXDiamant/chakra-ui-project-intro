@@ -1,4 +1,6 @@
 import React from "react";
+
+// Chakra components
 import {
   Button,
   Box,
@@ -10,7 +12,9 @@ import {
   Icon,
   StackProps,
 } from "@chakra-ui/react";
-import CheckIcon from "../src/icons/Icon";
+
+// Icon component
+import { CheckIcon } from "../src/icons/Icon";
 
 // ListItem component
 export const ListItem = (props: StackProps) => {
